@@ -2,7 +2,7 @@
 
 Bu proje, 2 boyutlu bir düzlemde tanımlanmış iki farklı engel sınıfını, aralarında **maksimum güvenlik koridoru (margin)** bırakacak şekilde ayıran matematiksel bir model ve algoritma içermektedir.
 
-## 🛠️ Proje Hakkında
+##  Proje Hakkında
 Otonom araçların güvenliği için sadece engelleri ayırmak yeterli değildir; sistemin ölçüm hatalarına ve gürültüye karşı dayanıklı olması için engellere olan uzaklığın maksimize edilmesi gerekir. Bu projede, bu problemi çözmek için **Destek Vektör Makineleri (Support Vector Machines - SVM)** algoritması kullanılmıştır.
 
 ### Temel Özellikler
@@ -19,13 +19,13 @@ Algoritma, **Hinge Loss (Menteşe Kaybı)** fonksiyonunu **Stochastic Gradient D
 * **Karar Sınırı:** w * x + b = 0
 * **Marj Genişliği:** 2 / ||w||
 
-## 🏗️ Yazılım Mimarisi
+## Yazılım Mimarisi
 Proje, sorumlulukların ayrılması prensibine uygun olarak 3 ana katmandan oluşmaktadır:
 1. **Veri Modeli (Point):** Engel koordinatlarını ve etiketlerini tutan veri yapısı.
 2. **İş Mantığı (SVMSolver):** SVM algoritmasının ve gradyan inişi optimizasyonunun yapıldığı motor.
 3. **Analiz Katmanı (SafetyModule):** Hesaplanan sonuçları raporlayan ve güvenlik marjını analiz eden birim.
 
-## 📊 Zaman Karmaşıklığı Analizi
+##  Zaman Karmaşıklığı Analizi
 - **Eğitim (Training):** O(n) - Veri seti boyutuyla doğru orantılıdır.
 - **Tahmin (Prediction):** O(1) - Gerçek zamanlı navigasyon için anlık karar verir.
 
