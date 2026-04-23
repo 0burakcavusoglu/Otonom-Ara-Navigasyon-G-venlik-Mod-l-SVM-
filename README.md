@@ -11,7 +11,7 @@ Otonom araçların güvenliği için sadece engelleri ayırmak yeterli değildir
 * **Güvenli Bellek Yönetimi:** `std::unique_ptr` ve RAII prensipleri ile sıfır bellek sızıntısı hedeflenmiştir.
 * **Yüksek Verimlilik:** Eğitim aşaması O(n), karar verme (tahmin) aşaması O(1) zaman karmaşıklığına sahiptir.
 
-## 📐 Matematiksel Model
+##  Matematiksel Model
 Algoritma, **Hinge Loss (Menteşe Kaybı)** fonksiyonunu **Stochastic Gradient Descent (SGD)** yöntemiyle optimize ederek çalışır.
 
 [Image of Support Vector Machine margin and hyperplane]
